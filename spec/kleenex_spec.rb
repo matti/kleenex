@@ -4,6 +4,6 @@ RSpec.describe Kleenex do
   end
 
   it "kleans" do
-    kleenex
+    kleenex!
   end
 end

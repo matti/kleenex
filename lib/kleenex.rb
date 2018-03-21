@@ -1,7 +1,7 @@
 require 'database_cleaner'
 require 'sidekiq/api'
 
-def kleenex
+def kleenex!
   retryset = Sidekiq::RetrySet.new
   retryset.clear
 
