@@ -9,6 +9,8 @@ def kleenex!
     queue.clear
   end
 
+  Sidekiq::Stats.new.reset
+
   DatabaseCleaner.strategy = :truncation
   DatabaseCleaner.clean
 end
